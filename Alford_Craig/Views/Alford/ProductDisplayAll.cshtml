@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "ProductsViewAll";
+    Layout = "~/Views/Shared/_AlfordLayout.cshtml";
+}
+
+@model LinkedList<Alford_Craig.Models.Products>;
+
+<h3 class="contentTitle">Products</h3>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>PID</th>
+        <th>Inventory</th>
+        <th>Purchase</th>
+        <th></th>
+    </tr>
+
+    @foreach (Alford_Craig.Models.Products product in Model)
+    {
+
+    <tr>
+        <td class="alignleft">@product.Name</td>
+        <td class="alignleft">@product.Description</td>
+        <td class="alignright">@product.Price</td>
+        <td class="alignright">@product.PID</td>
+        <td class="alignright">@product.InventoryAmount</td>
+        <td>
+            <a href="@Url.Action("ClickToBuy", "Alford", new {PID=product.PID})">Buy</a>
+        </td>
+    </tr>
+    }
+</table>

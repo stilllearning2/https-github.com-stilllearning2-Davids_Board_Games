@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewData["Title"] = "SalesTransactionDisplayAll";
+    Layout = "~/Views/Shared/_AlfordLayout.cshtml";
+}
+@model LinkedList<Alford_Craig.Models.SalesTransaction>
+
+<h2>SalesTransactionDisplayAll</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>Product</th>
+            <th>Buyer</th>
+            <th>List Price</th>
+            <th>Quantity</th>
+            <th>Date Sold</th>
+        </tr>   
+    </thead>
+    
+    @foreach (Alford_Craig.Models.SalesTransaction item in @Model)
+    {
+        <tr>
+            <td>@item.Product.Name</td>
+            <td>@item.Person.FName @item.Person.LName</td>
+            <td>@item.Product.Price</td>
+            <td>@item.PurchasedQuantity</td>
+            <td>@item.SalesDataTime</td>
+        </tr>
+    }
+</table>

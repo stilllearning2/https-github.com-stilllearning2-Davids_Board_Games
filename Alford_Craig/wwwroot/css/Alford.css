@@ -1,0 +1,184 @@
+﻿body {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 120%;
+    background-color:  rgba(0, 0, 0, .7);
+}
+
+#wrapper {
+    min-width: 1150px;
+    max-width: 1400px;
+    width: 70%;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    letter-spacing: .1em;
+}
+
+#header {
+    position: relative;
+    height: 150px;
+    width: 97%;
+    margin-right: 5px;
+    margin-bottom: 7px;
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 255, .8);
+    border: 1px solid rgb(0, 0, 255);
+}
+
+#catan {
+    height: 150px;
+    width: 225px;
+    float: right;
+    margin-left: 10px;
+    border: 1px solid white;
+}
+
+
+#pandemic {
+    height: 150px;
+    width: 225px;
+    float: right;
+    border: 1px solid white;
+}
+
+#urlName {
+    height: 130px;
+    float:left;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 13px;
+    color: ghostwhite;
+    font-family: 'Switzera';
+    font-size: 130%;
+    letter-spacing: .2em;
+    text-align: center;
+    z-index: -1;
+}
+
+#account {
+    margin-right: 20px;
+    float: right;
+    font-size: 16px;
+}
+
+#userCart {
+    float: right;
+    margin-top: 60px;
+    padding-right: 20px;
+}
+
+
+#nav {
+    position: relative;
+    float: left;
+    width: 20%;
+    margin-left: 5px;
+    padding: 10px;
+    background-color: rgba(255, 255, 0, .8);
+    border: 1px solid rgb(255, 255, 0);
+    border-radius: 10px;
+}
+
+#nav ul {
+    display: block;
+}
+
+#nav ul li{
+    letter-spacing: .05em;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#content {
+    position: relative;
+    float: left;
+    width: 71%;
+    margin-left: 7px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    background-color: rgba(0, 255, 0, .8);
+    border: 1px solid rgb(0, 255, 0);
+    border-radius: 10px;
+    overflow-y: auto;
+}
+
+.contentTitle {
+    font-family: 'Switzera';
+    font-weight: bold;
+}
+
+.labelPerson{
+    line-height: 110%;
+    width: 110px;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+
+.labelProduct {
+    line-height: 110%;
+    width: 160px;
+    display: inline-block;
+    margin-right: 2px;
+}
+
+.form-control{
+    border-radius: 5px;
+}
+
+.submit {
+    height: 40px;
+    width: 120px;
+    font-size: 18px;
+    letter-spacing: .2em;
+}
+
+#AddPersonError, #LoginError{
+    color: blue;
+    margin-left: 50px;
+}
+
+table {
+    column-width: auto;
+    border-collapse: separate;
+    border-spacing: 7px 3px;
+    font-weight: normal;
+    font-size: initial;
+}
+
+td {
+    padding: 7px 3px;
+}
+
+.alignleft {
+    text-align: left;
+}
+
+.alignright {
+    text-align: right;
+}
+
+#footer {
+    position: relative;
+    float: left;
+    height: 75px;
+    width: 97%;
+    margin-top: 7px;
+    margin-right: 7px;
+    margin-left: 5px;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, .8);
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 10px;
+}
+

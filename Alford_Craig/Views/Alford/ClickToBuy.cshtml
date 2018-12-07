@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Purchase Confirmation";
+    Layout = "~/Views/Shared/_AlfordLayout.cshtml";
+}
+
+@model Alford_Craig.Models.SalesTransaction;
+
+<h3 class="imageTitle">Purchase Confirmation</h3>
+
+<p>
+    Thank you, @Model.Person.FName, for your purchase of @Model.Product.Name!
+</p>
+<p>
+    Your credit card will be charged @Model.Product.Price and will be shipped to @Model.Person.address.
+</p>
+<p>
+    We appreciate your business!
+</p>
+<p>
+    <a href="@Url.Action("ViewAllProducts","Alford")">Continue Shopping</a>
+</p>
+<p>
+    <a href="@Url.Action("Home","Alford")">Home</a>
+</p>
+

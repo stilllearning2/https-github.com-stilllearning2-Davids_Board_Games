@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_AlfordLayout.cshtml";
+}
+
+@model Alford_Craig.Models.LoginCredentials
+
+<h3 class="contentTitle">Login</h3>
+
+
+
+<form asp-action="LogMeIn",method="post">
+    <p>
+        <label asp-for="UserName" class="labelPerson">User Name:</label>
+        <input type="text" class="form-control" asp-for="UserName" />
+    </p>
+    <p>
+        <label asp-for="Password" class="labelPerson">Password:</label>
+        <input type="password" class="form-control" asp-for="Password" />
+    <p>
+        <label class="labelPerson"></label>
+        <button type="submit" class="submit">Submit</button>
+    </p>
+    <p>
+        <h4 id="LoginError">@ViewBag.LoginError</h4>
+    </p>
+    <p> 
+        <a href="@Url.Action("AddPerson", "Home")">Add New Person</a>
+    </p>
+
+</form>
+
+
+

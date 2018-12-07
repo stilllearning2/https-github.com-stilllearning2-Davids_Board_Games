@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/switzera" type="text/css" />
+    <link href="~/css/Alford.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <a href="@Url.Action("Home", "Alford")">
+                <img src="~/images/catan.jpg" alt="partial picture of the game Settlers of Catan" id="catan" />
+            </a>
+            <div id="urlName">
+                <h1>David's Board Games</h1>
+            </div>
+            <img src="~/images/pandemic.jpg" alt="partial picture of the game Pandemic" id="pandemic" />
+        </div>
+
+        <div id="middle">
+            <div id="nav">
+                <ul>
+                    <li><a href="@Url.Action("Home", "Alford")">Home</a></li>
+                    <li><a href="@Url.Action("About", "Alford")">About</a></li>
+                    <li><a href="@Url.Action("ViewAllProducts", "Alford")">View Products</a></li>
+                    <li><a href="">Coming Soon!</a></li>
+                    <li><a href="@Url.Action("EditPerson", "Home")">Edit Account</a></li>
+                    <li><a href="@Url.Action("Logout", "Alford")">Logoff</a></li>
+                </ul>
+                <ul>
+                    <li><a href="@Url.Action("EnterNewProduct", "Alford")">Add Product</a></li>
+                    <li><a href="@Url.Action("SalesReport", "Alford")">Sales Report</a></li>
+                </ul>
+            </div>
+
+            <div id="content">
+                @RenderBody()
+            </div>
+        </div> <!-- end of middle -->
+
+        <div id="footer">
+
+        </div>
+    </div> <!-- end of wrapper -->
+</body>
+</html>

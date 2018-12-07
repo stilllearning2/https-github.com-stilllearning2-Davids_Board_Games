@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Edit Person";
+    Layout = "~/Views/Shared/_AlfordLayout.cshtml";
+}
+
+@model Alford_Craig.Models.Person
+
+<h3  class="contentTitle">Edit Person</h3>
+
+<form asp-action="UpdatePerson" method="post">
+    <p>
+        <label asp-for="FName" class="labelPerson">First name:</label>
+        <input type="text" class="form-control" asp-for="FName" required />
+    </p>
+    <p>
+        <label asp-for="LName" class="labelPerson">Last name:</label>
+        <input type="text" class="form-control" asp-for="LName" required />
+    </p>
+    <p>
+        <label asp-for="email" class="labelPerson">Email:</label>
+        <input type="email" class="form-control" asp-for="email" required />
+    </p>
+    <p>
+        <label asp-for="phone" class="labelPerson">Phone:</label>
+        <input type="text" class="form-control" asp-for="phone" required />
+    </p>
+    <p>
+        <label asp-for="address" class="labelPerson">Address:</label>
+        <input type="text" class="form-control" asp-for="address" required />
+    </p>
+    <p>
+        <button class="btn submit btn-primary" type="submit">Submit</button>
+    </p>
+</form>
+

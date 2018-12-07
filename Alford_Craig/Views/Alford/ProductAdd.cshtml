@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "ProductAdd";
+    Layout = "~/Views/Shared/_AlfordLayout.cshtml";
+}
+@model Alford_Craig.Models.Products;
+
+<h3  class="contentTitle">Add Product</h3>
+
+<form method="post" asp-action="InsertProduct">
+    <p>
+        <label asp-for="Name" class="labelProduct">Product name:</label>  
+        <input type="text" class="form-control" asp-for="Name" required/>
+    </p>
+    <p>
+        <label asp-for="Description" class="labelProduct">Description:</label> 
+        <input type="text" class="form-control" asp-for="Description" required/>
+    </p>
+    <p>
+        <label asp-for="Price" class="labelProduct">Price:</label> 
+        <input type="text" class="form-control" asp-for="Price" required />
+    </p>
+    <p>
+        <label asp-for="InventoryAmount" class="labelProduct">Inventory Amount:</label> 
+        <input type="text" class="form-control" asp-for="InventoryAmount" required/>
+    </p>
+    <p>
+        <label class="labelProduct"></label>
+        <button class="btn submit btn-primary" type="submit">Submit</button>
+    </p>
+</form>
+

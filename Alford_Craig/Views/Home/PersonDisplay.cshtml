@@ -1,0 +1,35 @@
+﻿
+
+@{
+    ViewData["Title"] = "Display Person";
+    Layout = "~/Views/Shared/_AlfordLayout.cshtml";
+}
+
+@model Alford_Craig.Models.Person;
+
+
+<h3 class="contentTitle">Display Person</h3>
+
+
+<p>
+    <span class="labelPerson">First Name:  </span>@Model.FName
+</p>
+<p>
+    <span class="labelPerson">Last Name:  </span>@Model.LName
+</p>
+<p>
+    <span class="labelPerson">Email:  </span>@Model.email
+</p>
+<p>
+    <span class="labelPerson">Phone:  </span>@Model.phone
+</p>
+<p>
+    <span class="labelPerson">Address:  </span>@Model.address
+</p>
+<p>
+    @* for spacing only *@
+</p>
+
+<p>
+    <a href="@Url.Action("EditPerson", "Home")">Edit my Info</a>
+</p>

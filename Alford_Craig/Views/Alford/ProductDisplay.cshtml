@@ -1,0 +1,35 @@
+﻿
+@{
+    ViewData["Title"] = "View Product";
+    Layout = "~/Views/Shared/_AlfordLayout.cshtml";
+}
+@model Alford_Craig.Models.Products;
+
+<h3 class="contentTitle">View Product</h3>
+
+<p>
+    <span id="labelProduct">Name:  </span>@Model.Name
+</p>
+<p>
+    <span id="labelProduct">Description:  </span>@Model.Description
+</p>
+<p>
+    <span id="labelProduct">Price:  </span>@Model.Price
+</p>
+<p>
+    <span id="labelProduct">Inventory Amount:  </span>@Model.InventoryAmount
+</p>
+<p>
+    <span id="labelProduct">PID:  </span>@Model.PID
+</p>
+<p>
+    @* for spacing only *@
+</p>
+
+<p>
+    <a href="@Url.Action("EnterNewProduct", "Alford")">Add New Product</a>
+</p>
+<p>
+    <a href="@Url.Action("EditProduct", "Alford")">Edit Product</a>
+</p>
+

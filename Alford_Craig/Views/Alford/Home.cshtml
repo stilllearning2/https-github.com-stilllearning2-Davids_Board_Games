@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Home";
+    Layout = "~/Views/Shared/_AlfordLayout.cshtml";
+}
+
+<h3 class="contentTitle">Welcome, @ViewBag.UserFirstName, to David's Board Games!</h3>
+
+<p>
+    Whether you are looking for a quality game that requires strategy, quick wits, co-operation or just plain chance,
+    you have come to the right place.  All our games have been <a href="@Url.Action("About","Alford")">David</a> tested
+    to ensure that any game you buy here, will be one you, your family, and friends will enjoy playing over and over
+    again.
+</p>
+<p>
+    We have a large selection of <a href="@Url.Action("ViewAllProducts", "Alford")">board games</a>, so take your time
+    and browse until you find the game or games that is just right for you.  To make your shopping easier, we have set
+    up one-click buying to get your purchase on the way to use as simply and swiftly as possible.
+</p>
+<p>
+    If you like what you see here, please tell your friends about David's Board Games, where fun begins and good times roll!
+</p>
+<p>
+    Enjoy!
+</p>
+
